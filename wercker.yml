@@ -5,5 +5,5 @@ build:
   steps:
     - script: 
         name: Trigger DockerHub build
-        code: echo "You should put the curl command to trigger the build here!"
+        code: curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/sipfoundrydev/sipx-docker-base-image/trigger/${DOCKERHUB_TRIGGER_TOKEN}/
 
