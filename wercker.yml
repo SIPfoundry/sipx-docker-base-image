@@ -1,0 +1,9 @@
+box: centos:centos6
+no-response-timeout: 10
+command-timeout: 120
+build:
+  steps:
+    - script: 
+        name: Trigger DockerHub build
+        code: echo "You should put the curl command to trigger the build here!"
+
