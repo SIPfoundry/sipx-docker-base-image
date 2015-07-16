@@ -83,8 +83,13 @@ RUN yum -y install \
 	texinfo-tex \
 	tokyocabinet-devel \
 	unixODBC-devel \
+	vixie-cron \
 	v8-devel \
-	xmlrpc-c-devel; \
+	xerces-c-devel \
+	xmlrpc-c-devel \
+	zeromq-devel \
+	zip \
+	;
 	yum clean all
 
 
