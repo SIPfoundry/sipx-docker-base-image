@@ -75,7 +75,7 @@ RUN yum -y install \
 	rubygem-mocha \
 	rubygem-rake \
 	rubygems \
-	shadow-utils
+	shadow-utils \
 	scons \
 	tar \
 	tcp_wrappers-devel \
