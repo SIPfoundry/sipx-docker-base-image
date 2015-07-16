@@ -90,6 +90,10 @@ RUN yum -y install \
 	zeromq-devel \
 	zip \
 	;
-	yum clean all
+
+#
+# Clean up
+#
+RUN yum clean all
 
 
