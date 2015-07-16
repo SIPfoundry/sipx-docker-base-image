@@ -18,9 +18,11 @@ RUN sed -i "s/#baseurl/baseurl/" /etc/yum.repos.d/epel.repo; sed -i "s/mirrorlis
 RUN yum -y install \
 	automake \
 	bison \
+	bind-utils \
 	bzip2-devel \
 	boost-devel \
 	chrpath \
+	cppunit-devel \
 	createrepo \
 	db4-devel \
 	elfutils-devel \
@@ -29,8 +31,10 @@ RUN yum -y install \
 	flex \
 	gcc-c++ \
 	git \
+	gperftools-devel \
 	gtest-devel \
 	hiredis-devel \
+	httpd-devel \
 	iproute \
 	iptables \
 	leveldb-devel \
@@ -40,6 +44,9 @@ RUN yum -y install \
 	libevent-devel \
 	libmcrypt-devel \
 	libpcap-devel \
+	libtool \
+	libtool-ltdl \
+	libtool-ltdl-devel \
 	libselinux-devel \
 	libsrtp-devel \
 	libtool \
@@ -48,7 +55,9 @@ RUN yum -y install \
 	m4 \
 	mysql-devel \
 	net-tools \
+	openssh-clients \
 	openssl-devel \
+	patch \
 	pcre-devel \
 	perl \
 	perl-devel \
@@ -66,12 +75,14 @@ RUN yum -y install \
 	rubygem-mocha \
 	rubygem-rake \
 	rubygems \
+	shadow-utils
 	scons \
 	tar \
 	tcp_wrappers-devel \
 	tetex-dvips \
 	texinfo-tex \
 	tokyocabinet-devel \
+	unixODBC-devel \
 	v8-devel \
 	xmlrpc-c-devel; \
 	yum clean all
