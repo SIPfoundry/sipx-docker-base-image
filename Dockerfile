@@ -9,7 +9,7 @@ MAINTAINER SIPFoundry Dev <sipfoundrydev@gmail.com>
 # Install EPEL repository
 #
 RUN yum -y update; yum -y install epel-release; yum clean all; yum -y --disablerepo=epel update  ca-certificates
-RUN sed -i "s/#baseurl/baseurl/" /etc/yum.repos.d/epel.repo; sed -i "s/mirrorlist/#mirrorlist/" /etc/yum.repos.d/epel.repo
+#RUN sed -i "s/#baseurl/baseurl/" /etc/yum.repos.d/epel.repo; sed -i "s/mirrorlist/#mirrorlist/" /etc/yum.repos.d/epel.repo
 
 #
 # Install Dependency Package
