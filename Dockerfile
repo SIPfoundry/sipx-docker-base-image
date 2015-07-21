@@ -53,6 +53,7 @@ RUN yum -y install \
 	libtool-ltdl-devel \
 	lm_sensors-devel \
 	m4 \
+	mongoose \
 	mysql-devel \
 	net-tools \
 	openssh-clients \
