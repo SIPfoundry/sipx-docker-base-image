@@ -51,6 +51,7 @@ RUN yum -y install \
 	libsrtp-devel \
 	libtool \
 	libtool-ltdl-devel \
+	lksctp-tools-devel \
 	lm_sensors-devel \
 	m4 \
 	mongoose \
